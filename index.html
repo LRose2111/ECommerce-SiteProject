@@ -10,9 +10,7 @@
 <body>
     <header class = "header">
         <nav>
-           <h3>CARA</h3>
-           <img src = "assets/icons8-pottery-96.png">
-           <h3>CARA</h3>
+            <h3>CARA<img src = "assets/icons8-pottery-96.png" class = "logo_image">CARA</h3>
             <ul>
                 <li><a href="#home">HOME</li></a>
                 <li><a href="#products">PRODUCT</li></a>
@@ -20,13 +18,13 @@
                 <li><a href="#contact">CONTACT</li></a>
             </ul>
         </nav>
-        <hr id = 'bold_across'>
+        <hr id = "bold_across">
     </header>
     <main>
         <section class = "home">
             <div section id ="home"></div>
             <h1>CERAMICS CREATED BY HAND...</h1>
-            <h1>...FROM THE GROUND UP</h1>
+            <h1 id = "hometxt_right">...FROM THE GROUND UP</h1>
         </section>
         <section class = "about">
             <div section id ="about"></div>
@@ -68,21 +66,22 @@
             <div section id ="contact"></div>
             <h2>CONTACT</h2>
             <hr>
-            <p>
+            <div class ="form">
                 <form class="email">
                     <label for="email">EMAIL</label><br>
                     <input type="text" id="email" name="email" value=""><br>
-                </form>
-                <form class="message"></form>
+                </form><br>
+                <form class="message">
                     <label for="message">MESSAGE</label><br>
                     <input type="text" id="message" name="message" value=""><br>
                 </form><br>
                 <button type="button">SEND</button>
-            </p>
+            </div>
         </section>
     </main>
     <footer>
         <h2>CARA CARA</h2>
+        <h3>CARA<img src="assets/icons8-pottery-96 (1).png" class = "logo_image"/h3>
     </footer>
 </body>
 </html>

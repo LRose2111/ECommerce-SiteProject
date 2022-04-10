@@ -1,0 +1,138 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+main {
+    margin: 1rem auto;
+
+}
+
+main section {
+    padding: 2rem;
+}
+
+header{
+    padding: 1rem;
+    text-align: center;
+    display: inline;
+
+}
+
+.logo_image{
+    height: 30px;
+
+}
+
+nav h3{
+
+    align-items: center;
+    display: inline;
+}
+
+nav ul{
+    list-style-type: none;
+    position: absolute;
+    top: 1rem;
+    font-size:small;
+    text-decoration: none;
+}
+
+nav li{
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+nav li a{
+    display: inline; /*makes list items side-by-side*/
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+hr {
+    text-align: left;
+    margin-left: 0;
+    width: 50%;
+    size: 3;
+    color: rgb(0, 0, 0);
+}
+
+#bold_across{
+    color: rgb(0, 0, 0);
+    size: 3;
+    width: 100%;
+}
+
+.home {
+    background-image: url("assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 500px;
+
+}
+
+.home h1{
+    color: rgb(255, 255, 255)
+}
+
+.about img {
+    float: left;
+    width: 350px;
+    height: 490px;
+    margin: 20px;
+}
+
+#float_right {
+    float: right;
+    width: 460px;
+    height: 608px;
+    margin-right: 300px;
+}
+
+#about_p1 {
+    width: 800px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+#about_p2 {
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 500px;
+
+}
+#about_p3 {
+    width: 400px;
+    margin-left: 500px;
+
+}
+
+.products{
+    margin-top: 10rem;
+}
+
+.form{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.email input{
+    padding: 1px 250px;
+}
+.message input{
+    padding: 80px 250px;
+}
+
+footer{
+    text-align: center;
+    background-color:  #ff7b00;
+    /*position: fixed; */
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+}
