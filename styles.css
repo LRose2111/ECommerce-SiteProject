@@ -1,10 +1,18 @@
+*,
+*::before,
+*after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 html{
     box-sizing: border-box;
 }
 
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(0, 0, 0);
+    color: black;
     margin: 0;
 }
 
@@ -14,13 +22,15 @@ main {
 }
 
 main section {
-    padding: 2rem;
+    padding-left: 4rem;
 }
 
 header{
-    padding: 1rem;
-    text-align: center;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2%;
 
 }
 
@@ -29,55 +39,64 @@ header{
 
 }
 
-nav h3{
-
-    align-items: center;
-    display: inline;
-}
-
 nav ul{
     list-style-type: none;
-    position: absolute;
-    top: 1rem;
     font-size:small;
     text-decoration: none;
 }
 
 nav li{
     display: inline;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 nav li a{
-    display: inline; /*makes list items side-by-side*/
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
-hr {
-    text-align: left;
+.hr_section {
     margin-left: 0;
     width: 50%;
-    size: 3;
-    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+.hr_product {
+    margin-left: 0;
+    width: 30%;
+    border: 2px solid black;
 }
 
-#bold_across{
-    color: rgb(0, 0, 0);
-    size: 3;
-    width: 100%;
+.hr_header{
+    border: 2px solid black;
+    margin-left: 2em;
+    margin-right: 2em;
+
 }
 
 .home {
     background-image: url("assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
     background-size: cover;
-    background-position: center;
-    padding-bottom: 500px;
+    padding-top: 75px;
+    padding-bottom: 85px;
+    margin-left: 2em;
+    margin-right: 2em;
 
 }
 
-.home h1{
-    color: rgb(255, 255, 255)
+.home h2{
+    color: white;
+    margin-left: 2em;
+
+}
+
+.homeh2r_container{
+    margin-top: 4em;
+    margin-right: 2em;
+}
+
+#hometxt_right{
+    text-align: right;
+    margin-right: 3em;
 }
 
 .about img {
@@ -112,12 +131,48 @@ hr {
 }
 
 .products{
+    margin-top: 12rem;
+}
+
+
+.product_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 70px;
+    padding-top: 40px;
+}
+
+.product_container p{
+    width: 300px;
+    font-size: 13px;
+}
+
+.product_container a{
+    color:#bf7631;
+    font-size: 15px;
+}
+
+.product_container button{
+    background-color: #bf7631;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.product_container span{
+    padding-left: 60px;
+}
+
+.contacts{
     margin-top: 10rem;
 }
 
-.form{
-    text-align: center;
-    margin-top: 20px;
+.form_container{
+    padding-top: 20px;
+    max-width: 700px;
+    margin: auto;
+    padding-bottom: 30px
 }
 
 .email input{
@@ -128,11 +183,30 @@ hr {
 }
 
 footer{
-    text-align: center;
     background-color:  #ff7b00;
-    /*position: fixed; */
-    width: 100%;
     left: 0;
     bottom: 0;
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+.footer_container_img{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.footer_container_img img{
+    height: 50px;
+}
+
+.footer_container_words{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.footer_container_words p{
+    display: flex;
+    margin-right: 2rem;
+    font-size: small;
 }
