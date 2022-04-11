@@ -25,12 +25,18 @@ main section {
     padding-left: 4rem;
 }
 
-header{
+.header_container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 0px 2%;
+
+}
+
+.header_container strong{
+    font-size: smaller;
+    margin-left: 20px
 
 }
 
@@ -39,20 +45,24 @@ header{
 
 }
 
-nav ul{
-    list-style-type: none;
-    font-size:small;
-    text-decoration: none;
-}
-
 nav li{
     display: inline;
+    font-size: small;
     margin-right: 1rem;
 }
 
 nav li a{
     text-decoration: none;
     color: black;
+}
+
+#search{
+    background-image: url("assets/1200px-Google_Magnifying_Glass.svg.png");
+    background-position: right;
+    padding-left: 30px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
 .hr_section {
@@ -90,7 +100,7 @@ nav li a{
 }
 
 .homeh2r_container{
-    margin-top: 4em;
+    margin-top: 10em;
     margin-right: 2em;
 }
 
@@ -99,33 +109,37 @@ nav li a{
     margin-right: 3em;
 }
 
+.about {
+    padding-top: 40px;
+}
+
 .about img {
     float: left;
     width: 350px;
     height: 490px;
-    margin: 20px;
+    margin: 30px;
 }
 
 #float_right {
     float: right;
     width: 460px;
     height: 608px;
-    margin-right: 300px;
+    margin-right: 225px;
 }
 
 #about_p1 {
-    width: 800px;
+    width: 900px;
     margin-left: 30px;
     margin-top: 30px;
 }
 #about_p2 {
-    width: 400px;
+    width: 450px;
     margin-top: 50px;
     margin-left: 500px;
 
 }
 #about_p3 {
-    width: 400px;
+    width: 450px;
     margin-left: 500px;
 
 }
@@ -138,8 +152,10 @@ nav li a{
 .product_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 65px;
     row-gap: 70px;
     padding-top: 40px;
+    margin-left: 20px;
 }
 
 .product_container p{
@@ -175,6 +191,13 @@ nav li a{
     padding-bottom: 30px
 }
 
+.form_container button{
+    background-color: #bf7631;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
 .email input{
     padding: 1px 250px;
 }
@@ -191,7 +214,7 @@ footer{
 
 .footer_container_img{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items: center;
 }
 
@@ -203,10 +226,4 @@ footer{
     display: flex;
     justify-content:flex-end;
     align-items: center;
-}
-
-.footer_container_words p{
-    display: flex;
-    margin-right: 2rem;
-    font-size: small;
 }
